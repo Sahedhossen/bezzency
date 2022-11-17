@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --maincolor: #0f2f44
+    --color: #ffda62
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+
+/* common css ends */
+
+/* heder start */
+
+header {
+    background-color: var(--maincolor);
+    background-color: #0f2f44;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 19px 0;
+}
+
+header .welcome{
+    width: 50%;
+}
+header .open{
+    width: 50%;
+    text-align: right;
+}
+/* heder end */
+
+
+/* logo start */
+nav .logo{
+    width: 30%;
+}
+
+nav .menu{
+    width: 70%;
+}
+
+.menu ul{
+    text-align: right;
+}
+.menu ul li{
+      display: inline-block;
+}
+.menu ul li a{
+    text-transform: capitalize;
+    color: #222;
+    font-style: 500;
+    padding: 40px 20px;
+    display: block;
+    transition: 0.60s;
+}
+.menu ul li:hover > a{
+    background-color: #fff9e6;
+    color: #ffda62;
+}
+.menu .submenu{
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    background-color: #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.40s;
+    margin-top: 30px;
+}
+.menu ul li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+.menu ul li a .icon{
+    transition: 0.60s;
+}
+.menu ul li:hover a .icon{
+    transform: rotate(180deg);
+    display: inline-block;
+}
+.menu .submenu li{
+    display: block;
+}
+.menu .submenu li a{
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+}
+/* logo end */
+
+/* banner start */
+#banner{
+    background-image: url(../img/banner.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+#banner .success{
+    width: 40%;
+    padding: 140px 0;
+}
+#banner .success .first-headding{
+    font-weight: 400;
+    font-size: 50px;
+    flood-color: #0f2f44;
+}
+#banner .success .secound-headding{
+    font-weight: 400;
+    font-size: 80px;
+    flood-color: #0f2f44;
+    font-family: 'Abril Fatface', cursive;
+}
+#banner .success .h3{
+    font-weight: 400;
+    font-size: 32px;
+    color: #8484bf;
+    letter-spacing: 15px;
+}
+#banner .success p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin: 30px 0;
+}
+#banner .success a{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #8484bf;
+    padding: 13px 19px;
+    border-radius: 5px;
+}
+#banner .success .icon a{
+    color: #8484bf;
+    background-color: white;
+    border-radius: 50px;
+    margin-left: 19px;
+
+}
+/* banner end */
